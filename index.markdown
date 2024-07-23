@@ -118,7 +118,7 @@ layout: portfolio
 
           </div>
         </section>
-        <!-- End of Home Subpage -->
+
 
         <!-- ======================================== -->
         <!--                ABOUT Subpage             -->
@@ -133,10 +133,14 @@ layout: portfolio
             <div class="row">
               <div class="col-xs-12 col-sm-7">
                 <p>
-                  I'm Jordan Digho from Cameroon, a highly eenthausiate of Computer Science most basically as programming is concerned.
-                  It's already a couple of years that I'm engaged in the path of learning Computer Science related subjects and I find them quite
-                  interesting with time and with thier evolution. Presently a graduate of the National Advanced School of Engineering - Yaounde,
-                  I'm presently pursuing my studies in China where for now I'm studying Chinese Language at Shandong Vocational College of Science
+                  I'm Jordan Digho from Cameroon, a highly eenthausiate of Computer Science most basically as
+                  programming is concerned.
+                  It's already a couple of years that I'm engaged in the path of learning Computer Science related
+                  subjects and I find them quite
+                  interesting with time and with thier evolution. Presently a graduate of the National Advanced School
+                  of Engineering - Yaounde,
+                  I'm presently pursuing my studies in China where for now I'm studying Chinese Language at Shandong
+                  Vocational College of Science
                   and Technology in Weifang city found in the Shandong Province.
                 </p>
               </div>
@@ -495,10 +499,10 @@ layout: portfolio
 
           </div>
         </section>
-        <!-- End of About Me Subpage -->
+
 
         <!-- ======================================== -->
-        <!--                RESUME Subpage             -->
+        <!--               RESUME Subpage             -->
         <!-- ======================================== -->
         <section data-id="resume" class="animated-section">
           <div class="page-title">
@@ -796,9 +800,11 @@ layout: portfolio
             <!-- End of Certificates -->
           </div>
         </section>
-        <!-- End of Resume Subpage -->
 
-        <!-- Portfolio Subpage -->
+
+        <!-- ======================================== -->
+        <!--              PORTFOLIO Subpage           -->
+        <!-- ======================================== -->
         <section data-id="portfolio" class="animated-section">
           <div class="page-title">
             <h2>Portfolio</h2>
@@ -808,7 +814,7 @@ layout: portfolio
 
             <div class="row">
               <div class="col-xs-12 col-sm-12">
-                <!-- Portfolio Content -->
+
                 <div class="portfolio-content">
 
                   <ul class="portfolio-filters">
@@ -816,103 +822,42 @@ layout: portfolio
                       <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
                     </li>
                     <li>
-                      <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                      <a class="filter btn btn-sm btn-link" data-group="category_mobile">Mobile</a>
                     </li>
                     <li>
-                      <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                      <a class="filter btn btn-sm btn-link" data-group="category_web">Web</a>
                     </li>
                   </ul>
 
                   <!-- Portfolio Grid -->
                   <div class="portfolio-grid three-columns">
 
-                    <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                    {% for proj in site.projects %}
+                    <figure class="item lbaudio" data-groups='["category_all", "category_{{ proj.category }}"]'>
                       <div class="portfolio-item-img">
-                        <img src="img/portfolio/1.jpg" alt="SoundCloud Audio" title="" />
-                        <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
-                          class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                        <img src="{{ proj.image }}" alt="{{ proj.alt }}" title="{{ proj.title }}" />
+                        <a href="{{ proj.site }}" target="_blank" title="{{ proj.title }}"></a>
                       </div>
 
-                      <i class="fa fa-volume-up"></i>
-                      <h4 class="name">SoundCloud Audio</h4>
-                      <span class="category">SoundCloud</span>
+                      <i class="{{ proj.icon }}"></i>
+                      <h4 class="name">{{ proj.title }}</h4>
+                      <a href="{{ proj.site }}" target="_blank" rel="noopener noreferrer">
+                        <span class="category">{{proj.category_lable }}</span>
+                      </a>
                     </figure>
+                    {% endfor %}
 
-                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                      <div class="portfolio-item-img">
-                        <img src="img/portfolio/2.jpg" alt="Media Project 2" title="" />
-                        <a href="portfolio-1.html" class="ajax-page-load"></a>
-                      </div>
-
-                      <i class="far fa-file-alt"></i>
-                      <h4 class="name">Detailed Project 2</h4>
-                      <span class="category">Detailed</span>
-                    </figure>
-
-                    <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
-                      <div class="portfolio-item-img">
-                        <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
-                        <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe"
-                          title="Vimeo Video 1"></a>
-                      </div>
-
-                      <i class="fas fa-video"></i>
-                      <h4 class="name">Vimeo Video 1</h4>
-                      <span class="category">Vimeo Videos</span>
-                    </figure>
-
-                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                      <div class="portfolio-item-img">
-                        <img src="img/portfolio/4.jpg" alt="Media Project 1" title="" />
-                        <a href="portfolio-1.html" class="ajax-page-load"></a>
-                      </div>
-
-                      <i class="far fa-file-alt"></i>
-                      <h4 class="name">Detailed Project 1</h4>
-                      <span class="category">Detailed</span>
-                    </figure>
-
-                    <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
-                      <div class="portfolio-item-img">
-                        <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
-                        <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
-                      </div>
-
-                      <i class="far fa-image"></i>
-                      <h4 class="name">Mockup Design 1</h4>
-                      <span class="category">Mockups</span>
-                    </figure>
-
-                    <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
-                      <div class="portfolio-item-img">
-                        <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
-                        <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe"
-                          title="YouTube Video 1"></a>
-                      </div>
-
-                      <i class="fas fa-video"></i>
-                      <h4 class="name">YouTube Video 1</h4>
-                      <span class="category">YouTube Videos</span>
-                    </figure>
                   </div>
                 </div>
-                <!-- End of Portfolio Content -->
               </div>
             </div>
           </div>
         </section>
-        <!-- End of Portfolio Subpage -->
 
-        <!-- Blog Subpage -->
+
+        <!-- ======================================== -->
+        <!--             BLOG POSTS Subpage           -->
+        <!-- ======================================== -->
         <section data-id="blog" class="animated-section">
           <div class="page-title">
             <h2>Blog</h2>
@@ -923,101 +868,29 @@ layout: portfolio
               <div class="col-xs-12 col-sm-12">
                 <div class="blog-masonry two-columns clearfix">
 
-                  <!-- Blog Post 1 -->
+                  {% for blog in site.blogs %}
                   <div class="item post-1">
                     <div class="blog-card">
                       <div class="media-block">
                         <div class="category">
-                          <a href="#" title="View all posts in Design">Design</a>
+                          <a href="#" title="View all posts in {{ blog.category }}">{{ blog.category }}</a>
                         </div>
-                        <a href="blog-post-1.html">
-                          <img src="img/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c"
-                            alt="Why I Switched to Sketch For UI Design" title="" />
+                        <a href="{{ blog.url }}">
+                          <img src="{{ blog.image }}" class="size-blog-masonry-image-two-c" alt="{{ blog.alt }}"
+                            title="" />
                           <div class="mask"></div>
                         </a>
                       </div>
                       <div class="post-info">
-                        <div class="post-date">05 Mar 2020</div>
-                        <a href="blog-post-1.html">
-                          <h4 class="blog-item-title">Why I Switched to Sketch For UI
-                            Design</h4>
+                        <div class="post-date">{{ blog.date | date_to_string }}</div>
+                        <a href="{{ blog.url }}">
+                          <h4 class="blog-item-title"> {{ blog.title }} </h4>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <!-- End of Blog Post 1 -->
+                  {% endfor %}
 
-                  <!-- Blog Post 2 -->
-                  <div class="item post-2">
-                    <div class="blog-card">
-                      <div class="media-block">
-                        <div class="category">
-                          <a href="#" title="View all posts in UI">UI</a>
-                        </div>
-                        <a href="blog-post-1.html">
-                          <img src="img/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c"
-                            alt="Best Practices for Animated Progress Indicators" title="" />
-                          <div class="mask"></div>
-                        </a>
-                      </div>
-                      <div class="post-info">
-                        <div class="post-date">23 Feb 2020</div>
-                        <a href="blog-post-1.html">
-                          <h4 class="blog-item-title">Best Practices for Animated Progress
-                            Indicators</h4>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Blog Post 2 -->
-
-                  <!-- Blog Post 3 -->
-                  <div class="item post-1">
-                    <div class="blog-card">
-                      <div class="media-block">
-                        <div class="category">
-                          <a href="#" title="View all posts in Design">Design</a>
-                        </div>
-                        <a href="blog-post-1.html">
-                          <img src="img/blog/blog_post_3.jpg" class="size-blog-masonry-image-two-c"
-                            alt="Designing the Perfect Feature Comparison Table" title="" />
-                          <div class="mask"></div>
-                        </a>
-                      </div>
-                      <div class="post-info">
-                        <div class="post-date">06 Feb 2020</div>
-                        <a href="blog-post-1.html">
-                          <h4 class="blog-item-title">Designing the Perfect Feature
-                            Comparison Table</h4>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Blog Post 3 -->
-
-                  <!-- Blog Post 4 -->
-                  <div class="item post-2">
-                    <div class="blog-card">
-                      <div class="media-block">
-                        <div class="category">
-                          <a href="#" title="View all posts in E-Commerce">UI</a>
-                        </div>
-                        <a href="blog-post-1.html">
-                          <img src="img/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c"
-                            alt="An Overview of E-Commerce Platforms" title="" />
-                          <div class="mask"></div>
-                        </a>
-                      </div>
-                      <div class="post-info">
-                        <div class="post-date">07 Jan 2020</div>
-                        <a href="blog-post-1.html">
-                          <h4 class="blog-item-title">An Overview of E-Commerce Platforms
-                          </h4>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Blog Post 4 -->
                 </div>
               </div>
             </div>
@@ -1025,9 +898,11 @@ layout: portfolio
 
 
         </section>
-        <!-- End of Blog Subpage -->
 
-        <!-- Contact Subpage -->
+
+        <!-- ======================================== -->
+        <!--             CONTACT Subpage              -->
+        <!-- ======================================== -->
         <section data-id="contact" class="animated-section">
           <div class="page-title">
             <h2>Contact</h2>
@@ -1036,27 +911,27 @@ layout: portfolio
           <div class="section-content">
 
             <div class="row">
-              <!-- Contact Info -->
               <div class="col-xs-12 col-sm-4">
                 <div class="lm-info-block gray-default">
                   <i class="lnr lnr-map-marker"></i>
-                  <h4>San Francisco</h4>
+                  <h4>Weifang, Shandong - CHINA</h4>
                   <span class="lm-info-block-value"></span>
                   <span class="lm-info-block-text"></span>
                 </div>
 
                 <div class="lm-info-block gray-default">
                   <i class="lnr lnr-phone-handset"></i>
-                  <h4>415-832-2000</h4>
+                  <h4>+86 172 6322 3868</h4>
                   <span class="lm-info-block-value"></span>
                   <span class="lm-info-block-text"></span>
                 </div>
 
                 <div class="lm-info-block gray-default">
                   <i class="lnr lnr-envelope"></i>
-                  <h4><a href="https://lmpixels.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                      data-cfemail="8beae7eef3cbeef3eae6fbe7eea5e8e4e6">[email&#160;protected]</a>
-                  </h4>
+                  <!-- <h4><a href="https://lmpixels.com/cdn-cgi/l/email-protection" class="__cf_email__"
+                      data-cfemail="8beae7eef3cbeef3eae6fbe7eea5e8e4e6">dighodonmezatankeujordan@gmail.com</a>
+                  </h4> -->
+                  <h6>dighodonmezatankeujordan@gmail.com</h6>
                   <span class="lm-info-block-value"></span>
                   <span class="lm-info-block-text"></span>
                 </div>
@@ -1138,7 +1013,7 @@ layout: portfolio
 
           </div>
         </section>
-        <!-- End of Contact Subpage -->
+
       </div>
     </div>
 
