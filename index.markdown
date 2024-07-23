@@ -836,12 +836,12 @@ layout: portfolio
                     <figure class="item lbaudio" data-groups='["category_all", "category_{{ proj.category }}"]'>
                       <div class="portfolio-item-img">
                         <img src="{{ proj.image }}" alt="{{ proj.alt }}" title="{{ proj.title }}" />
-                        <a href="{{ proj.site }}" target="_blank" title="{{ proj.title }}"></a>
+                        <a href="{{ proj.website }}" target="_blank" title="{{ proj.title }}"></a>
                       </div>
 
                       <i class="{{ proj.icon }}"></i>
                       <h4 class="name">{{ proj.title }}</h4>
-                      <a href="{{ proj.site }}" target="_blank" rel="noopener noreferrer">
+                      <a href="{{ proj.website }}" target="_blank" rel="noopener noreferrer">
                         <span class="category">{{proj.category_lable }}</span>
                       </a>
                     </figure>

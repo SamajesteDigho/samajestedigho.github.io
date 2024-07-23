@@ -8,5 +8,5 @@ alt:        "Project display image"
 category_lable: "Mobile App"
 category:   mobile
 icon:       "fa fa-search"
-site:       "http://housekeeper.samajestedigho.tech"
+website:       "http://housekeeper.samajestedigho.tech"
 ---
