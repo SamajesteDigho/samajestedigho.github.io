@@ -4,7 +4,7 @@ title: "Housekeeper Finder"
 date: 2024-07-22 10:30:00 +0800
 categories: jekyll update
 category: mobile
-image: "/assets/images/alx.png"
+image: "/assets/images/blog/housekeeper-logo.png"
 alt: "housekeeperfinderlogo"
 author: "SamajesteDigho"
 author_image: "/assets/images/avatar.jpg"
@@ -82,7 +82,7 @@ accreditations: "Software Engineer"
       </p>
 
       <figure class="wp-block-image">
-        <img src="/assets/images/alx.png" alt="Post Images">
+        <img src="/assets/images/blog/housekeeper-banner.jpg" alt="Post Images">
         <figcaption>
           The caption of the image
         </figcaption>
@@ -115,7 +115,7 @@ accreditations: "Software Engineer"
 
       <h2>Accomplishements with the Project</h2>
       <figure class="wp-block-image">
-        <img src="/assets/images/coursera.jpg" alt="Post Images">
+        <img src="/assets/images/blog/housekeeper-architecture.png" alt="Post Images">
         <figcaption>
           Data flow architecture
         </figcaption>
@@ -166,6 +166,16 @@ accreditations: "Software Engineer"
       </ul>
       </p>
 
+      <figure class="row">
+        <div class="col-md-3"><img src="/assets/images/blog/housekeeper-home.png"></div>
+        <div class="col-md-3"><img src="/assets/images/blog/housekeeper-search.png"></div>
+        <div class="col-md-3"><img src="/assets/images/blog/housekeeper-tasks.png"></div>
+        <div class="col-md-3"><img src="/assets/images/blog/housekeeper-profile.png"></div>
+        <figcaption>
+          Screenshots of principal pages of the mobile app
+        </figcaption>
+      </figure>
+
 
       <h2>Technical Challenge</h2>
       <p>
@@ -191,30 +201,39 @@ accreditations: "Software Engineer"
 
       <h3>What I learned</h3>
       <p>
-        <ul>
-          Even though it connot be listed all here because there a certain things that I learned for sur
-          but I am not imidiately conscious of them, here are the most evident ones :
-          <li>
-            <b>Application development flow and best practices.</b> Through out the learning process, I have come through things that really as an autoictact
-            would have not be easy for me to come through and apprehend. I learned about best practices of programming and steps to go through when we was to
-            build and app completely. This project was an exemple and I really happy of the outccomings of this project.
-          </li> 
-          <li>
-            <b>Configured a server and hosted my app.</b> This is one of the things I have never done before principally due to
-            lack of ressources but also due to lack of the knowledge. With this project, I configure a web server and hosted my
-            application and it is available online. It is just a great acheivement for me and I think I'm gone to do better as time moves on.
-          </li>
-          <li>
-            <b>About my engineering habilities.</b> The most important thing I can say that I have learned is that the work of an engineer is not easy
-            but due to this, it is passionating and if one puts in the required efforts, it will be an exciting journey. This project wasan example. It
-            is not perfect nor too good, but I thing it is a good start.
-          </li>
-        </ul>
+      <ul>
+        Even though it connot be listed all here because there a certain things that I learned for sur
+        but I am not imidiately conscious of them, here are the most evident ones :
+        <li>
+          <b>Application development flow and best practices.</b> Through out the learning process, I have come through
+          things that really as an autoictact
+          would have not be easy for me to come through and apprehend. I learned about best practices of programming and
+          steps to go through when we was to
+          build and app completely. This project was an exemple and I really happy of the outccomings of this project.
+        </li>
+        <li>
+          <b>Configured a server and hosted my app.</b> This is one of the things I have never done before principally
+          due to
+          lack of ressources but also due to lack of the knowledge. With this project, I configure a web server and
+          hosted my
+          application and it is available online. It is just a great acheivement for me and I think I'm gone to do
+          better as time moves on.
+        </li>
+        <li>
+          <b>About my engineering habilities.</b> The most important thing I can say that I have learned is that the
+          work of an engineer is not easy
+          but due to this, it is passionating and if one puts in the required efforts, it will be an exciting journey.
+          This project wasan example. It
+          is not perfect nor too good, but I thing it is a good start.
+        </li>
+      </ul>
       </p>
 
       <h2>Conclusion</h2>
-      It was a great journey through out this project, I learned, I failed, I continued to learn untill I got a result, even as minim as it is, I think 
-      it is the promese that I can do better with additional efforts. Focused on developping more and more, I thanks you for having taken time to go through
+      It was a great journey through out this project, I learned, I failed, I continued to learn untill I got a result,
+      even as minim as it is, I think
+      it is the promese that I can do better with additional efforts. Focused on developping more and more, I thanks you
+      for having taken time to go through
       this post.
 
       <div class="tagcloud">
@@ -263,7 +282,8 @@ accreditations: "Software Engineer"
               </p>
 
               <ul class="social-share-transparent size-md">
-                <li><a href="https://www.facebook.com/samajeste.dighojordan.7?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.facebook.com/samajeste.dighojordan.7?mibextid=ZbWKwL"><i
+                      class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://github.com/samajestedigho"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/samajesteDigho"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
@@ -276,10 +296,6 @@ accreditations: "Software Engineer"
           <li>Project Landing Page : <a href="http://housekeeper.samajestedigho.tech/">Click here</a></li>
         </ul>
       </div>
-      <!-- End Author  -->
-
-      <!-- Start Comment Form Area  -->
-      <!-- End Comment Form Area  -->
     </div>
 
   </div>
