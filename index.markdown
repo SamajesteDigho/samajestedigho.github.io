@@ -57,11 +57,16 @@ layout: portfolio
 
       <div class="social-links">
         <ul>
-          <li><a href="https://www.linkedin.com/in/samajesteDigho" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.facebook.com/samajeste.dighojordan.7?mibextid=ZbWKwL" target="_blank"><i
-                class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/samajesteDigho" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/samajeste.dighojordan.7?mibextid=ZbWKwL" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
         </ul>
       </div>
 
